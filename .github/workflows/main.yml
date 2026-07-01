@@ -1,0 +1,14 @@
+ name: demo-workflow
+
+ on: 
+  push:
+
+ jobs:
+   hello:
+     runs-on: ubuntu-latest
+     steps:
+       - uses: actions/checkout@v4
+       - name: print hello
+         run: echo Welcome to my server
+   
+ 
